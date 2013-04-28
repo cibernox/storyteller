@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><%= @title %></title>
+  <link href="/static/storyteller.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/static/drop.png">
+</head>
+<body>
+  <div id="main-container">
+    <h2><%= @title %></h3>
+    <p class="story-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    <p class="story-line">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    <p class="story-line">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    <p class="story-line">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+    <p class="story-line">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+    <p class="story-line">proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></p>
+  <div>
+</body>
+</html>

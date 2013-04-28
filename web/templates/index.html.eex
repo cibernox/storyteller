@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><%= @title %></title>
+  <link href="/static/storyteller.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/static/drop.png">
+</head>
+<body>
+  <section id="main-container">
+    <h1><%= @title %></h3>
+    <div class="stories-list">
+      <h2>Please, choose a story</h3>
+      <article class="story">
+        <h3>Story1</h3>
+        <a href="/story1">Read it to me!</a>
+      </article>
+      <article class="story">
+        <h3>Story2</h3>
+        <a href="/story2">Read it to me!</a>
+      </article>
+      <article class="story">
+        <h3>Story3</h3>
+        <a href="/story3">Read it to me!</a>
+      </article>
+    </section>
+  <div>
+</body>
+</html>

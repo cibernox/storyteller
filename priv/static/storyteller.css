@@ -1,0 +1,33 @@
+html, body {
+  background-color: #4B7399;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 14px;
+}
+
+#main-container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+.story-list .story{
+  display: inline-block;
+  width: 30%;
+  margin: 10px 0.5%;
+  padding: 0.5em;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.story a{
+  display: inline-block;
+  background-color: #4B7399;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.story a:hover{
+  background-color: #4E7FAC
+}
