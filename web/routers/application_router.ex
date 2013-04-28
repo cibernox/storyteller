@@ -19,7 +19,10 @@ defmodule ApplicationRouter do
 
   get "/story1" do
     conn = conn.assign(:title, "Story1")
-    conn = conn.send_chunked(200)
+    render conn, "story.html"
+  end
+
+  get "/story1/play" do
     conn.chunk("Animal")
     conn.chunk("Bellota")
     conn.chunk("Calasparra")
@@ -28,5 +31,6 @@ defmodule ApplicationRouter do
     conn.chunk("Faisan")
     conn.chunk("Galicia")
     conn.chunk("Hipopotamo")
+    conn = conn.send_chunked(200)
   end
 end
