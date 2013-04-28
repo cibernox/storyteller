@@ -23,6 +23,7 @@ defmodule ApplicationRouter do
   end
 
   get "/story1/play" do
+    conn = conn.send_chunked(200)
     conn.chunk("Animal")
     conn.chunk("Bellota")
     conn.chunk("Calasparra")
@@ -31,6 +32,5 @@ defmodule ApplicationRouter do
     conn.chunk("Faisan")
     conn.chunk("Galicia")
     conn.chunk("Hipopotamo")
-    conn = conn.send_chunked(200)
   end
 end
