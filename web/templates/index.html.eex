@@ -2,25 +2,27 @@
 <html>
 <head>
   <title><%= @title %></title>
+  <link href="/static/favicon.ico" rel="icon">
   <link href="/static/storyteller.css" media="all" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="/static/drop.png">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="/static/storyteller.js"></script>
 </head>
 <body>
-  <section id="main-container">
+  <div id="main-container">
     <h1><%= @title %></h3>
-    <div class="stories-list">
+    <section class="stories-list">
       <h2>Please, choose a story</h3>
       <article class="story">
-        <h3>Story1</h3>
-        <a href="/story1">Read it to me!</a>
+        <h3>Red Riding</h3>
+        <a href="/red-riding">Read it to me!</a>
       </article>
       <article class="story">
-        <h3>Story2</h3>
-        <a href="/story2">Read it to me!</a>
+        <h3>Snow white</h3>
+        <a href="/snow-white">Read it to me!</a>
       </article>
       <article class="story">
-        <h3>Story3</h3>
-        <a href="/story3">Read it to me!</a>
+        <h3>Cinderella</h3>
+        <a href="/cinderella">Read it to me!</a>
       </article>
     </section>
   <div>

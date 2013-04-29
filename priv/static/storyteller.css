@@ -12,13 +12,17 @@ html, body {
   border: solid 1px black;
   margin-top: 20px;
 }
-.story-list .story{
+.stories-list .story{
   display: inline-block;
   width: 30%;
   margin: 10px 0.5%;
   padding: 0.5em;
   border: 1px solid lightgray;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .stories-list .story{ width: 90%; }
 }
 .story a{
   display: inline-block;
