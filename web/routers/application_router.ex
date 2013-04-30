@@ -18,10 +18,11 @@ defmodule ApplicationRouter do
     render conn, "index.html"
   end
 
-  get "/:story_name" do
-    normalized_title = String.capitalize(String.replace(conn.params[:story_name], "-", " "))
+  get "/:file_name" do
+    normalized_title = String.capitalize(String.replace(conn.params[:file_name], "-", " "))
     conn = conn.assign :title, normalized_title
-    render conn, "#{conn.params[:story_name]}.html"
+    conn = conn.assign :file_name, conn.params[:file_name]
+    render conn, "story.html"
   end
 
   get "/play/:story_name" do
