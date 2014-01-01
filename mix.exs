@@ -18,8 +18,7 @@ defmodule Storyteller.Mixfile do
   end
 
   defp deps do
-    [ { :ranch, %r(.*), github: "extend/ranch" },
-      { :cowboy, %r(.*), github: "extend/cowboy" },
-      { :dynamo, "0.1.0.dev", github: "elixir-lang/dynamo" } ]
+    [ { :cowboy, github: "extend/cowboy" },
+      { :dynamo, github: "elixir-lang/dynamo" } ]
   end
 end
