@@ -29,11 +29,11 @@ defmodule ApplicationRouter do
     conn = conn.resp_content_type("text/event-stream")
     conn = conn.send_chunked(200)
 
-    iterator = File.iterator!("#{conn.params[:story_name]}.txt")
+    iterator = File.stream!("#{conn.params[:story_name]}.txt")
 
     Enum.each iterator, fn(line) ->
       { :ok, conn } = conn.chunk "data: #{line}\n"
-      await conn, 1000, on_wake_up(&1, &2), on_time_out(&1)
+      await conn, 1000, &on_wake_up(&1, &2), &on_time_out(&1)
     end
     conn
   end
